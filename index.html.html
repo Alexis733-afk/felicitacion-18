@@ -1,0 +1,74 @@
+como es que no s<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Feliz 18 Cumpleaños, Amigo!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container {
+            margin: auto;
+            background: rgba(255,255,255,0.85);
+            padding: 2em 2em 1em 2em;
+            border-radius: 20px;
+            max-width: 400px;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+        }
+        h1 {
+            color: #E76F51;
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            color: #264653;
+            margin-bottom: 1em;
+        }
+        .birthday-cake {
+            font-size: 5em;
+            margin-bottom: 0.5em;
+            animation: bounce 1.2s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0);}
+            100% { transform: translateY(-25px);}
+        }
+        .audio-player {
+            margin-top: 1.5em;
+        }
+        .msg {
+            font-size: 1.18em;
+            color: #333;
+            margin-bottom: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="birthday-cake">🎂</div>
+        <h1>¡Feliz Cumpleaños!</h1>
+        <h2>¡Bienvenido a los 18!</h2>
+        <div class="msg">
+            Querido amigo,<br>
+            hoy celebramos no solo un año más, sino el comienzo de una nueva etapa.<br>
+            ¡Que todos tus sueños se hagan realidad!<br>
+            <strong>¡Disfruta tu día al máximo!</strong>
+        </div>
+        <div class="audio-player">
+            <audio id="cumpleAudio" controls autoplay>
+                <!-- Cambia 'cancion.mp3' por el nombre real de tu archivo MP3 -->
+                <source src="cancion.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
